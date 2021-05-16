@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.25" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmailClientOOP.MainwindowController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="250.0">
+         <children>
+            <Button layoutX="42.0" fx:id="compose" onMouseClicked="#compose" layoutY="98.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="163.0" text="Send new message" />
+            <Button layoutX="42.0" fx:id="refresh" onMouseClicked="#initialize" layoutY="169.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="163.0" text="Refresh messages" />
+            <Button layoutX="42.0" fx:id="logout" onMouseClicked="#logout" layoutY="249.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="163.0" text="Logout" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="750.0">
+         <children>
+            <ListView fx:id="mailbox" layoutX="0.0" layoutY="0.0" onMouseClicked="#showmessage" prefHeight="600.0" prefWidth="750.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

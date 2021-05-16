@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmailClientOOP.ComposeController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextArea fx:id="body" layoutX="13.0" layoutY="164.0" prefHeight="222.0" prefWidth="575.0" />
+            <TextField fx:id="subject" layoutX="13.0" layoutY="95.0" prefHeight="25.0" prefWidth="575.0" />
+            <TextField fx:id="receiveremail" layoutX="13.0" layoutY="36.0" prefHeight="25.0" prefWidth="575.0" />
+            <Button fx:id="send" onMouseClicked="#send" layoutX="475.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="send" />
+            <Label layoutX="13.0" layoutY="14.0" text="Receiver email" />
+            <Label layoutX="13.0" layoutY="78.0" text="Subject" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmailClientOOP.loginController">
+   <children>
+      <Button layoutX="229.0" layoutY="237.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="97.0" text="Login" />
+      <PasswordField fx:id="password" layoutX="158.0" layoutY="188.0" prefHeight="25.0" prefWidth="239.0" />
+      <TextField fx:id="email" layoutX="158.0" layoutY="140.0" prefHeight="25.0" prefWidth="239.0" />
+      <Label layoutX="222.0" layoutY="87.0" prefHeight="40.0" prefWidth="112.0" text="Welcome">
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="isloding" layoutX="197.0" layoutY="288.0" prefHeight="17.0" prefWidth="161.0" text="your inbox is being loaded...." visible="false" />
+   </children>
+</Pane>
