@@ -34,10 +34,6 @@ public class Main extends Application {
             e.printStackTrace();
         }
         launch(args);
-//        if(me.Send(receiver,subject,body))
-//            System.out.println("email sent successfully");
-//        else
-//            System.out.println("failure");
     }
 
 }

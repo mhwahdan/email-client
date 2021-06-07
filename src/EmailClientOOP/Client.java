@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class Client {
+public class Client implements ClientBehavior {
 
     // Sender's email ID needs to be mentioned
     final private String email;
@@ -25,20 +25,13 @@ public class Client {
 
     private boolean unauthenticated;
 
-    public String getEmail() {
-        return email;
-    }
-
     public List<email> messages;
 
     public static List<emailconfigration> configerations = new ArrayList<>();
 
     private emailconfigration configeration;
 
-    public boolean is_authenticated()
-    {
-        return unauthenticated;
-    }
+
 
     public Client(String email, String password) throws Exception  {
         boolean flag = false;
@@ -65,7 +58,17 @@ public class Client {
         this.unauthenticated = false;
     }
 
-    private boolean Authenticate()
+    public String getEmail() {
+        return email;
+    }
+
+    public boolean is_authenticated()
+    {
+        return unauthenticated;
+    }
+
+    @Override
+    public boolean Authenticate()
     {
         try
         {
@@ -78,6 +81,8 @@ public class Client {
         }
         return true;
     }
+
+    @Override
     public boolean ReadMessages () throws Exception
     {
         int counter = 0;
@@ -106,6 +111,7 @@ public class Client {
         return true;
     }
 
+    @Override
     public boolean Send(String receiver, String subject, String body) {
         if(this.unauthenticated)
             return false;
